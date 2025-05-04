@@ -61,7 +61,7 @@ export default function SinglePostPage() {
             }
             setPost((prevPost) => ({
                 ...prevPost,
-                comments: [...prevPost.comments, data.comment],
+                comments: data.comments,
             }));
             setNewComment({ content: '', post_id: id, comment_id: null });
         } catch (error) {
